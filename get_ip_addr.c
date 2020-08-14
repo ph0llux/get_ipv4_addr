@@ -7,7 +7,6 @@ int main ()
 {
     struct ifaddrs *ifap, *ifa;
     struct sockaddr_in *sa;
-    struct sockaddrv6_in *sa;
     char *addr;
 
     getifaddrs(&ifap);
