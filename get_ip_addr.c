@@ -14,7 +14,7 @@ int main ()
         if (ifa->ifa_addr && ifa->ifa_addr->sa_family==AF_INET) {
             sa = (struct sockaddr_in *) ifa->ifa_addr;
             addr = inet_ntoa(sa->sin_addr);
-            printf("%s|%s\n", ifa->ifa_name, addr);
+            printf("%s %s\n", ifa->ifa_name, addr);
         }
     }
     freeifaddrs(ifap);
